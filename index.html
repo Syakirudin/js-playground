@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>JS Playground</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>JS Playground</title>
 </head>
+
 <body>
-    
-    <div class="container-1" id="container-1">
-        <h3 >Click element</h3>
-        <div class="box-1" id="box-1"></div>
-        <div class="box-2" id="box-2"></div>
-    </div>
+  <div class="container-1" id="container-1">
+    <h3>Click element</h3>
+    <div class="box-1" id="box-1"></div>
+    <div class="box-2" id="box-2"></div>
+  </div>
 
-    <div class="container-2" id="container-2">
-        <h3>Count element <span id="count"></span></h3>
-        <div class="box-3" id="box-3"></div>
-        <div class="box-4" id="box-4"></div>
-    </div>
+  <div class="container-2" id="container-2">
+    <h3>Count element <span id="count"></span></h3>
+    <div class="box-3" id="box-3"></div>
+    <div class="box-4" id="box-4"></div>
+  </div>
 
-    <div class="form-container">
-        <form action="" id="wageForm">
-            <h3>THIS IS FORM</h3>
+  <div class="container-3" id="container-3">
+    <h3>Add Remove Element</h3>
+    <div class="box-5" id="box-5"></div>
+    <div class="box-6" id="box-6"></div>
+    <div class="box-7" id="box-7"></div>
+  </div>
 
-            <label for="basicWage">Basic wages :</label>
-            <input type="number" id="basicWage">
+  <div class="form-container">
+    <form action="" id="wageForm">
+      <h3>THIS IS FORM</h3>
 
-            <p> Hourly Pay (if 8 hours working) : <span id="hourlyPay"></span></p>
-            <p> Epf Contribution : <span id="epfPay"></span></p>
-            <p> Socso Contribution : <span id="socsoPay"></span></p>
-            <p> Net Pay: <span id="netPay"></span></p>
+      <label for="basicWage">Basic wages :</label>
+      <input type="number" id="basicWage" />
 
-            <p>Overtime Calculation</p>
-            <label for="otHours"> Normal Rate</label>
+      <p>Hourly Pay (if 8 hours working) : <span id="hourlyPay"></span></p>
+      <p>Epf Contribution : <span id="epfPay"></span></p>
+      <p>Socso Contribution : <span id="socsoPay"></span></p>
+      <p>Net Pay: <span id="netPay"></span></p>
 
-            <input type="checkbox" name="otRate" id="1.0Rate">
-            <input type="checkbox" name="otRate" id="1.5Rate">
-            <input type="number" id="normalRate">
-            <p> Normal OT Pay<span id="normalPay"></span></p>
+      <p>Overtime Calculation</p>
+      <label for="otHours"> Normal Rate</label>
 
-            <label for="otHours"> Double Rate (x2.0)</label>
-            <input type="checkbox" name="otRate" id="2.0Rate">
-            <input type="checkbox" name="otRate" id="2.0RateAfter8Hours">
-            <input type="number" id="doubleRate">
-            <p> Double OT Pay<span id="doublePay"></span></p>
+      <input type="checkbox" name="otRate" id="1.0Rate" />
+      <input type="checkbox" name="otRate" id="1.5Rate" />
+      <input type="number" id="normalRate" />
+      <p>Normal OT Pay<span id="normalPay"></span></p>
 
-            <label for="otHours"> Triple Rate (x3.0)</label>
-            <input type="checkbox" name="otRate" id="3.0Rate">
-            <input type="checkbox" name="otRate" id="3.0RateAfter8Hours">
-            <input type="number" id="tripleRate">
-            <p> Triple OT Pay<span id="triplePay"></span></p>
+      <label for="otHours"> Double Rate (x2.0)</label>
+      <input type="checkbox" name="otRate" id="2.0Rate" />
+      <input type="checkbox" name="otRate" id="2.0RateAfter8Hours" />
+      <input type="number" id="doubleRate" />
+      <p>Double OT Pay<span id="doublePay"></span></p>
 
+      <label for="otHours"> Triple Rate (x3.0)</label>
+      <input type="checkbox" name="otRate" id="3.0Rate" />
+      <input type="checkbox" name="otRate" id="3.0RateAfter8Hours" />
+      <input type="number" id="tripleRate" />
+      <p>Triple OT Pay<span id="triplePay"></span></p>
 
-            <p>Gross Pay:<span id="grossPay"></span></p>
-        </form>
-        
-    </div>
+      <p>Gross Pay:<span id="grossPay"></span></p>
+    </form>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

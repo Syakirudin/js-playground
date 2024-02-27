@@ -16,6 +16,29 @@ document.getElementById('box-4').addEventListener('click',function(){
 
 
 
+document.getElementById('box-5').addEventListener('click', function(){
+    let boxView = document.getElementById('box-6');
+    if (boxView) {
+        boxView.remove();
+    }
+});
+
+document.getElementById('box-7').addEventListener('click', function(){
+    let boxView = document.getElementById('box-6');
+    if (!boxView) {
+        // Create and append box-6
+        boxView = document.createElement('div');
+        boxView.className = 'box-6';
+        boxView.id = 'box-6';
+        document.getElementById('container-3').appendChild(boxView);
+    }
+});
+
+
+
+
+
+
     class WageCalculator {
         constructor() {
             this.basicWage = 0;
