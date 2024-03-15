@@ -10,12 +10,12 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}
   console.log(data);
   
   // Display the weather information
-  const weatherDiv = document.getElementById('weather');
-  weatherDiv.innerHTML = `
-    <h2>${data.name}</h2>
-    <p>Temperature: ${data.main.temp} Kelvin</p>
-    <p>Description: ${data.weather[0].description}</p>
-  `;
+//   const weatherDiv = document.getElementById('weather');
+//   weatherDiv.innerHTML = `
+//     <h2>${data.name}</h2>
+//     <p>Temperature: ${data.main.temp} Kelvin</p>
+//     <p>Description: ${data.weather[0].description}</p>
+//   `;
 })
 .catch(error => {
   console.error('Error fetching weather data:', error);

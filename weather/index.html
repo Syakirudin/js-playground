@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="main-container">
     <h1>Weather</h1>
-
-    <input type="text" id="city" placeholder="City">
-    <button id="search">search</button>
-    <ul id="weather"></ul>
+    <div id="body-container">
+        <div id="map-section">
+            <p>Map</p>
+            <!-- <input type="text" id="city" placeholder="City">
+            <button id="search">search</button> -->
+        </div>
+        <div id="details-section">
+            <p>Details</p>
+        </div>
+    </div>
+    </div>
 
     <script src="./script.js"></script>
 </body>
