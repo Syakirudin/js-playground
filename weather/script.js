@@ -1,6 +1,6 @@
-// Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
+
 const apiKey = '032004ca8f95408678aaea779051ed9c';
-const city = 'kuching'; // Replace 'New York' with the city you want to get the weather for
+const city = document.getElementById('city-name').value; 
 
 // Fetch weather data from OpenWeatherMap API
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
