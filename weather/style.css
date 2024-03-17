@@ -33,11 +33,14 @@ h1{
 }
 
 #details-section{
-    border-style: solid;
-    gap: 20px;  
-    padding: 10px;
+    /* border-style: solid; */
+    padding: auto;
     width: 900px;
-    height: 200px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .map{
@@ -47,3 +50,12 @@ h1{
     bottom: 130px;
     color: antiquewhite;
 }
+
+#cityMy{
+    border-style: solid;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 20%;
+}
+
