@@ -73,6 +73,8 @@ h1{
 
 #icon{
     text-align: center;
+    justify-content: center;
+    align-items: center;
     height: 320px;
     margin: 10px;
     border: solid;

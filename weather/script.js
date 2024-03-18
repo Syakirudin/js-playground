@@ -48,11 +48,11 @@ document.querySelectorAll('.city').forEach(cityDiv => {
                 `;
 
                 if (roundedTemp >= 30) {
-                    icon = '<img src="./src/sun-svgrepo-com.svg" alt="Sun">';
+                    icon = '<img src="./src/sun-svgrepo-com.svg" alt="Sun" style="width: 300px; height: 300px;"/>';
                 } else if (roundedTemp >= 20) {
-                    icon = '<img src="./src/sun-behind-cloudsvgrepo-com.svg" alt="cloudy">';
+                    icon = '<img src="./src/sun-behind-cloud-svgrepo-com.svg" alt="cloudy" style="width: 300px; height: 300px;">';
                 } else {
-                    icon = '<img src="./src/sun-behind-rain-cloud-svgrepo-com.svg" alt="rain">';
+                    icon = '<img src="./src/sun-behind-rain-cloud-svgrepo-com.svg" alt="rain" style="width: 300px; height: 300px;">';
                 }
                 
 
