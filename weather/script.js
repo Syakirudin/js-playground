@@ -16,10 +16,17 @@ detailsSectionDiv.innerHTML = cityNamesHTML;
 
 const apiKey = '032004ca8f95408678aaea779051ed9c';
 
+fetch('https://api.openweathermap.org/data/2.5/weather?q=Kuala Lumpur&appid=032004ca8f95408678aaea779051ed9c')
+    .then(response => response.json())
+    .then(data => {
+        // Display the entire weather object in the console
+        console.log(data);
+    });
+
 document.querySelectorAll('.city').forEach(cityDiv => {
     cityDiv.addEventListener('click', function() {
         let city = this.dataset.city; // Retrieve the city name from the data attribute
-        let emoji;
+        let icon;
 
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
             .then(response => response.json())
@@ -29,6 +36,7 @@ document.querySelectorAll('.city').forEach(cityDiv => {
 
                 // Display the weather information
                 const weatherDiv = document.getElementById('weather');
+                const iconDiv = document.getElementById('icon');
                 const tempCelcius = data.main.temp - 273.15;
                 const roundedTemp = tempCelcius.toFixed(1);
 
@@ -36,17 +44,18 @@ document.querySelectorAll('.city').forEach(cityDiv => {
                     <h2>${data.name}</h2>
                     <p>Temperature: ${roundedTemp} Celsius</p>
                     <p>Description: ${data.weather[0].description}</p>
+                    <p>${displayDateTime()}</p>
                 `;
 
                 if (roundedTemp >= 30) {
-                    emoji = '🥵';
+                    icon = '<img src="./src/sun.gif" alt="Sun">';
                 } else if (roundedTemp >= 20) {
-                    emoji = '😌';
+                    icon = '😌';
                 } else {
-                    emoji = '🥶';
+                    icon = '🥶';
                 }
 
-                weatherDiv.innerHTML += `<p>${emoji}</p>`;
+                iconDiv.innerHTML = `<p class="icon-img">${icon}</p>`;
             })
             .catch(error => {
                 console.error('Error fetching weather data:', error);
@@ -60,11 +69,11 @@ function displayDateTime() {
     let date = currentDate.toDateString();
     let time = currentDate.toLocaleTimeString();
 
-    return "Current Date: " + date + "<br>Current Time: " + time;
+    return date + "<br>" + time;
 }
 
 // Call the function to display date and time
-document.getElementById('displayDateTime').innerHTML = displayDateTime();
+// document.getElementById('displayDateTime').innerHTML = displayDateTime();
 
 
 
