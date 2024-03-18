@@ -48,12 +48,13 @@ document.querySelectorAll('.city').forEach(cityDiv => {
                 `;
 
                 if (roundedTemp >= 30) {
-                    icon = '<img src="./src/sun.gif" alt="Sun">';
+                    icon = '<img src="./src/sun-svgrepo-com.svg" alt="Sun">';
                 } else if (roundedTemp >= 20) {
-                    icon = '😌';
+                    icon = '<img src="./src/sun-behind-cloudsvgrepo-com.svg" alt="cloudy">';
                 } else {
-                    icon = '🥶';
+                    icon = '<img src="./src/sun-behind-rain-cloud-svgrepo-com.svg" alt="rain">';
                 }
+                
 
                 iconDiv.innerHTML = `<p class="icon-img">${icon}</p>`;
             })
