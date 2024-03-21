@@ -5,6 +5,14 @@
 
 }
 
+body{
+    background-color: #3a3939;
+}
+
+h1{
+    color: white;
+}
+
 .main-container{
     margin: 20px auto;
     /* border-style: solid; */
@@ -33,4 +41,37 @@
     height: 400px;
     border-style: solid;
     border-radius: 30px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    h1{
+        font-size: 20px;
+    }
+    
+.main-container{
+    margin: 20px auto;
+    /* border-style: solid; */
+    margin: 30px auto;
+    text-align: center;
+    height: auto;
+    width: 400px;
+    padding-bottom: 50px;
+}
+    .body-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card{
+        width: 300px;
+        height: 300px;
+        border-style: solid;
+        border-radius: 30px;
+    }
 }

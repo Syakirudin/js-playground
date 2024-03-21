@@ -45,6 +45,26 @@ h1 {
   justify-content: center;
 }
 
+#left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  width: 600px;
+}
+
+#details-weather{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  gap: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
 .map {
   justify-content: center;
   align-items: center;
