@@ -56,7 +56,7 @@ document.querySelectorAll('.city').forEach(cityDiv => {
                 }
                 
 
-                iconDiv.innerHTML = `<p class="icon-img">${icon}</p>`;
+                iconDiv.innerHTML = `<div class="icon-img">${icon}</div>`;
             })
             .catch(error => {
                 console.error('Error fetching weather data:', error);
