@@ -37,15 +37,18 @@ document.querySelectorAll('.city').forEach(cityDiv => {
                 // Display the weather information
                 const weatherDiv = document.getElementById('weather');
                 const iconDiv = document.getElementById('icon');
+                const header = document.getElementById('header-weather');
                 const tempCelcius = data.main.temp - 273.15;
                 const roundedTemp = tempCelcius.toFixed(1);
 
                 weatherDiv.innerHTML = `
-                    <h2>${data.name}</h2>
+                    
                     <p>Temperature: ${roundedTemp} Celsius</p>
                     <p>Description: ${data.weather[0].description}</p>
                     <p>${displayDateTime()}</p>
                 `;
+
+                header.innerHTML = `<h2>${data.name}</h2>`
 
                 if (roundedTemp >= 30) {
                     icon = '<img src="./src/sun-svgrepo-com.svg" alt="Sun" style="width: 300px; height: 300px;"/>';
@@ -73,8 +76,8 @@ function displayDateTime() {
     return date + "<br>" + time;
 }
 
-// Call the function to display date and time
-// document.getElementById('displayDateTime').innerHTML = displayDateTime();
+
+document.getElementById('weather').innerHTML = displayDateTime();
 
 
 
