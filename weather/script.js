@@ -56,7 +56,7 @@ document.querySelectorAll('.city').forEach(cityDiv => {
 
                 weatherDiv.innerHTML = `
                     
-                    <p>Temperature: ${roundedTemp} ${emoji} </p>
+                    <p>Temperature: ${roundedTemp} C ${emoji} </p>
                     <p>Description: ${data.weather[0].description}</p>
                     <p>${displayDateTime()}</p>
                     
