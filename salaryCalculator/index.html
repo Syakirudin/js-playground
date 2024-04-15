@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Salary Calculator 🧮</title>
 </head>
 <body>
     
   <div class="form-container">
     <form action="" id="wageForm">
-      <h3>THIS IS FORM</h3>
+      <h3 style="text-align: center;">Salary Calculator</h3>
 
       <label for="basicWage">Basic wages :</label>
       <input type="number" id="basicWage" />
@@ -23,21 +23,21 @@
       <p>Overtime Calculation</p>
       <label for="otHours"> Normal Rate</label>
 
-      <input type="checkbox" name="otRate" id="1.0Rate" />
-      <input type="checkbox" name="otRate" id="1.5Rate" />
-      <input type="number" id="normalRate" />
+      <span>1.0 Rate</span><input type="checkbox" name="otRate" id="1.0Rate" />
+      <span>1.5 Rate</span><input type="checkbox" name="otRate" id="1.5Rate" />
+      <input type="number" id="normalRate" /><span>Hours</span>
       <p>Normal OT Pay<span id="normalPay"></span></p>
 
       <label for="otHours"> Double Rate (x2.0)</label>
-      <input type="checkbox" name="otRate" id="2.0Rate" />
-      <input type="checkbox" name="otRate" id="2.0RateAfter8Hours" />
-      <input type="number" id="doubleRate" />
+      <span>2.0 Rate</span><input type="checkbox" name="otRate" id="2.0Rate" />
+      <span>2.0 After 8 hours</span><input type="checkbox" name="otRate" id="2.0RateAfter8Hours" />
+      <input type="number" id="doubleRate" /><span>Hours</span>
       <p>Double OT Pay<span id="doublePay"></span></p>
 
       <label for="otHours"> Triple Rate (x3.0)</label>
-      <input type="checkbox" name="otRate" id="3.0Rate" />
-      <input type="checkbox" name="otRate" id="3.0RateAfter8Hours" />
-      <input type="number" id="tripleRate" />
+      <span>2.0 Rate</span><input type="checkbox" name="otRate" id="3.0Rate" />
+      <span>2.0 After 8 hours</span><input type="checkbox" name="otRate" id="3.0RateAfter8Hours" />
+      <input type="number" id="tripleRate" /><span>Hours</span>
       <p>Triple OT Pay<span id="triplePay"></span></p>
 
       <p>Gross Pay:<span id="grossPay"></span></p>
