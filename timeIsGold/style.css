@@ -5,3 +5,22 @@
     align-items: center;
     text-align: center;
 }
+
+
+.main-container{
+    margin: 250px auto;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 600px;
+
+}
+
+#liveTime{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
